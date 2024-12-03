@@ -1,0 +1,24 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.graphics.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.base.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.fxml.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.web.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.controls.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.media.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx.swing.jar",
+        "c:\\Users\\samue\\OneDrive\\Documents\\javafx\\lib\\javafx-swt.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.base.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.controls.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.fxml.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.graphics.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.media.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.swing.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx.web.jar",
+        "c:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib\\javafx-swt.jar"
+    ]
+}

@@ -1,0 +1,24 @@
+.button {
+    -fx-background-color: #5f92ff;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: Helvetica, sans-serif;
+    -fx-pref-width: 150px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 2, 2);
+}
+
+.button:hover {
+    -fx-background-color: #8eb2ff;
+}
+
+.button:pressed {
+    -fx-background-color: #0011a8;
+}
+
+.radio-button {
+    -fx-font-size: 15px;
+    -fx-font-family: Helvetica, sans-serif;
+    -fx-text-fill: #333;
+}
+
+

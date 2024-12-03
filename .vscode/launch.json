@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainMenu",
+            "request": "launch",
+            "mainClass": "MainMenu",
+            "projectName": "csi2300 finalproj v2_5e2756c4",
+            "vmArgs": "--module-path 'C:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib' --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing"
+        },
+        {
+            "type": "java",
+            "name": "MainMenu",
+            "request": "launch",
+            "mainClass": "MainMenu",
+            "projectName": "csi2300 finalproj v2_34555729",
+            "vmArgs": "--module-path 'C:\\Users\\samue\\Documents\\javafx\\lib' --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing"
+        },
+        {
+            "type": "java",
+            "name": "MainMenu",
+            "request": "launch",
+            "mainClass": "MainMenu",
+            "projectName": "csi2300 finalproj v2_34555729",
+            "vmArgs": "--module-path 'C:\\Users\\samue\\Documents\\javaFX\\javafx-sdk\\lib' --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "TicTacToe",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "csi2300 finalproj v2_34555729",
+            "vmArgs": "--module-path 'C:\\Users\\samue\\Documents\\javafx\\lib' --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing"
+        }
+    ]
+}
