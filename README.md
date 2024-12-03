@@ -8,7 +8,7 @@ This is a compilation of three quick and fun games, Tic-Tac-Toe, Connect Four, a
 
 To launch the program from the command line, make sure you are in the same folder as the jar file and run this command:
 
-java --module-path (your_file_path)/lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing -jar QuicknFunGames.jar
+java --module-path (your_javafx_file_path)/lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing -jar QuicknFunGames.jar
 
 
 To play a game, just click the button labeled with the game you'd like and check the radio button for the mode you would like to engage! "1 player" pits you against the computer and "2 player" lets you play against a friend. For Hangman, "Normal" is what it sounds like, but "Hard" makes you guess the words backwards! For a more detailed explanation on how to use the app, check out the user manual.
