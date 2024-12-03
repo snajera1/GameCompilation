@@ -1,0 +1,120 @@
+classDiagram
+    class MainMenu{
+        +void start(Stage primaryStage)
+        +void showStats()
+        +void startTicTacToe(Stage primaryStage)
+        +void startTicTacToe2P(Stage primaryStage)
+        +void startConnectFour(Stage primaryStage)
+        +void startConnectFour2P(Stage primaryStage)
+        +void startHangman(Stage primaryStage)
+        +void startHangmanHard(Stage primaryStage)
+        +void main(String args[])
+    }
+    class Game{
+        <<Interface>>
+        +boolean checkWin()
+        +void showMessage(String title, String message)
+        +void returnMain()
+    }
+    class ComOpponent{
+        <<Interface>>
+        +void comMove()
+    }
+    class StatTracker{
+        <<Static>>
+        #int player1Wins$
+        #int player2Wins$
+        #int comWins$
+        #long timeStart$
+        #long timeEnd$
+        #ArrayList<String> winHistory$
+        +void startTime()$
+        +void endTime()$
+        +int calcTime()$
+        +void p1Win()$
+        +void p2Win()$
+        +void comWin()$
+        +void addWin()$
+        +void writeToFile()$
+        +Integer getP1Wins()$
+        +Integer getP2Wins()$
+        +Integer getComWins()$
+    }
+    Game <|-- TicTacToe
+    Game <|-- ConnectFour
+    Game <|-- Hangman
+    TicTacToe <|-- TicTacToe2P
+    Hangman <|-- HangmanHard
+    ConnectFour <|-- ConnectFour2P
+    ComOpponent <|-- TicTacToe2P
+    ComOpponent <|-- ConnectFour2P
+    TicTacToe ..> StatTracker : uses
+    Hangman ..> StatTracker : uses
+    ConnectFour ..> StatTracker : uses
+    MainMenu ..> StatTracker : uses
+    MainMenu --> TicTacToe : startTicTacToe()
+    MainMenu --> ConnectFour : startConnectFour()
+    MainMenu --> Hangman : startHangman()
+    TicTacToe : #Button[][] boardButtons
+    TicTacToe : #boolean player
+    TicTacToe : #Stage primaryStage
+    TicTacToe : +void start(Stage primaryStage)
+    TicTacToe : #GridPane drawBoard()
+    TicTacToe : #void buttonClicked(Button button)
+    TicTacToe : +boolean checkWin()
+    TicTacToe : +boolean checkFull()
+    TicTacToe : +void showMessage(String title, String message)
+    TicTacToe : +void showMessage()
+    TicTacToe : +void returnMain()
+    TicTacToe2P : -boolean playerTurn
+    TicTacToe2P : +void start(Stage primaryStage)
+    TicTacToe2P : #void buttonClicked(Button button)
+    TicTacToe2P : -ArrayList<int[]> getPossibleMoves()
+    TicTacToe2P : +void comMove()
+    ConnectFour : #int rows
+    ConnectFour : #int cols
+    ConnectFour : #int[][] boardStatus
+    ConnectFour : #boolean player
+    ConnectFour : #GridPane board
+    ConnectFour : #Stage primaryStage
+    ConnectFour : +void start(Stage primaryStage)
+    ConnectFour : -VBox drawBoard()
+    ConnectFour : -GridPane makeBoard()
+    ConnectFour : -HBox makeButtons()
+    ConnectFour : #dropPiece(int col)
+    ConnectFour : #boolean checkFull()
+    ConnectFour : #boolean checkWin(int row, int col)
+    ConnectFour : +void showMessage(String title, String message)
+    ConnectFour : +void showMessage()
+    ConnectFour : +void returnMain()
+    ConnectFour2P : -boolean playerTurn
+    ConnectFour2P : +void start(Stage primaryStage)
+    ConnectFour2P : #void dropPiece(int col)
+    ConnectFour2P : +void comMove()
+    Hangman : #String[] words
+    Hangman : #int attemptsLeft
+    Hangman : #Text attemptsDisplay
+    Hangman : #Stage primaryStage
+    Hangman : #TextField guess
+    Hangman : #Character letter
+    Hangman : #String word
+    Hangman : #ArrayList<Character> guessList
+    Hangman : #ArrayList<Character> guessCorrect
+    Hangman : #Text wordDisplay
+    Hangman : #int hangmanStage
+    Hangman : #String[] hangmanStages
+    Hangman : +void start(Stage primaryStage)
+    Hangman : #void drawBoard(String word)
+    Hangman : #String getWord()
+    Hangman : #void showWord()
+    Hangman : #void showHangman()
+    Hangman : #void showAttempts()
+    Hangman : #void guessClick()
+    Hangman : #boolean checkLetter()
+    Hangman : #boolean checkWin()
+    Hangman : +void showMessage(String title, String message)
+    Hangman : +void returnMain()
+    HangmanHard : +void start(Stage primaryStage)
+    HangmanHard : #String getWord()
+    HangmanHard : #String reverseWord(String word)
+    
